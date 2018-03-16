@@ -1,0 +1,208 @@
+body {
+  background: #E0E0E0; 
+  color: black;
+  font-size: 12pt;
+}
+page {
+  font-family: 'Times New Roman';
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+page[size="A4"] {  
+  width: 21cm;
+  height: 29.7cm; 
+}
+page[size="A4"][layout="portrait"] {
+  width: 29.7cm;
+  height: 21cm;  
+}
+page[size="A3"] {
+  width: 29.7cm;
+  height: 42cm;
+}
+page[size="A3"][layout="portrait"] {
+  width: 42cm;
+  height: 29.7cm;  
+}
+page[size="A5"] {
+  width: 14.8cm;
+  height: 21cm;
+}
+page[size="A5"][layout="portrait"] {
+  width: 21cm;
+  height: 14.8cm;  
+}
+.default-margin {
+  padding-top: 1.5cm;
+  padding-bottom: 1cm;
+  padding-left: 1.5cm;
+  padding-right: 1.5cm;
+}
+
+.print-setting-wrap {
+  position: fixed;
+  top: 0.5cm;
+  right: 10px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+/* Presence */
+table.presence-wrap tr td {
+  padding: 2px 5px;
+  border: 1px solid #000;
+}
+.presence-setting-wrap {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.presence-ttd {  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+.page {
+  position: relative;
+  width: 21cm;
+  min-height: 29.7cm;
+  font-family: 'Times New Roman';
+  background: white;
+  display: block;
+  margin: 0.5cm auto;
+  box-shadow: 0 0.5mm 2mm rgba(0,0,0,0.3);
+  box-sizing: border-box;
+}
+
+.qrcode {
+  position: absolute;
+  left: 1cm;
+  bottom: 1cm;
+}
+
+.ttd-wrap {
+  max-width: 300px;
+}
+.ttd-wrap .header {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.ttd-wrap .ttd-choices {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #efefef;
+  display: none;
+}
+.ttd-wrap .ttd-choices li {
+  border-bottom: 1px solid #ddd;
+  display: block;
+  padding: 5px;
+}
+.ttd-wrap .ttd-choices li:hover {
+  cursor: pointer;
+}
+.ttd-wrap .ttd-choices li:last-child {
+  border-bottom: none;
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('../fonts/Roboto/Roboto-Regular.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url('../fonts/Roboto/Roboto-Medium.ttf') format('ttf');
+}
+.font-roboto {
+  font-family: 'Roboto Regular', sans-serif;
+  font-style: normal;
+}
+.font-8 {
+  font-size: 8pt;
+}
+.font-9 {
+  font-size: 9pt;
+}
+.font-10 {
+  font-size: 10pt;
+}
+.font-11 {
+  font-size: 11pt;
+}
+.font-12 {
+  font-size: 12pt;
+}
+.spacing-1 {
+  line-height: 14px;
+}
+.static-height tr {
+  height: 33px;
+}
+.static-height tr.small {
+  height: 28px;
+}
+
+/* Print setting */
+.print-setting-container + .page {
+  margin-top: 70px;
+}
+.input-add-other {
+  border: none;
+  color: #333;
+  width: 50px;
+  padding-left: 5px
+}
+.btn-add-other, .btn-reset-other {
+  color: #fff; 
+  background-color: #5cb85c;
+  border: none;
+}
+.btn-add-other:hover, .btn-reset-other:hover {
+  background: #4cae4c;
+}
+.btn-add-other:focus, .btn-reset-other:focus {
+  outline: none;
+}
+
+/* On printing */
+
+@media print {
+  html, body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+  .page {
+    min-height: auto;
+  }
+  .page.page-undangan {
+    min-height: 29.7cm;
+  }
+  .default-margin {
+    padding: 0;
+  }
+  .print-with-margin {
+    padding: 1cm;
+  }
+  .print-setting-wrap {
+    display: none !important;
+  }
+  .presence-other-wrap {
+    display: none;
+  }
+  .print-setting-container + .page {
+    margin-top: 0;
+  }
+}

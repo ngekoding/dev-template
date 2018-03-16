@@ -1,0 +1,25 @@
+/* Dragable */
+.table-ordering tbody tr td {
+  cursor: pointer;
+  border: 1px solid #666;
+}
+.table-ordering tbody tr td.drag-icon {
+  color: #666;
+}
+.table-ordering tbody tr:hover {
+  background: #efefef;
+}
+.table-ordering {
+  font-family: 'Roboto Regular';
+  font-size: 11pt;
+}
+.table-ordering tbody tr td {
+  padding: 3px 5px;
+}
+.table-ordering tbody tr td:first-child {
+  text-align: center;
+}
+.table-ordering-note {
+  font-size: 10pt;
+  font-weight: bold;
+}

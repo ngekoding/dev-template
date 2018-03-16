@@ -1,0 +1,28 @@
+.content .calendar-embed {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: calc(100vh - 100px);
+}
+@media screen and (max-width: 767px) {
+	.content-wrap {
+		width: 100%;
+		margin-left: 0px;
+		
+		header {
+			left: 0;
+		}
+	}
+}
+@media screen and (max-width: 400px) {
+	.search-result-wrap {
+		width: 100%;
+		margin-bottom: 15px;
+
+		&:nth-child(odd), &:nth-child(even) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+}

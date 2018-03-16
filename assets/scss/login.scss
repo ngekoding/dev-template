@@ -1,0 +1,21 @@
+/* BASE - Base styles, variables, mixins, etc */
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_normalize.scss';
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url(../images/login-background.jpg) no-repeat;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+}
+
+.login-wrap {
+	width: 400px;
+	background: rgba(255, 255, 255, 0.9);
+	padding: 20px;
+	@include border-radius(2px);
+}

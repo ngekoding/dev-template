@@ -1,0 +1,46 @@
+header {
+	left: $sidebarWidth;
+	height: $headerHeight;
+	background: $colorLight;
+	border-bottom: 2px solid $colorGray;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 9;
+
+	.align-left {
+		height: $headerHeight;
+		display: flex;
+		align-items: center;
+		.fa {
+			color: $colorGrayDark;
+		}
+		form {
+			width: 100%;
+		}
+		.search {
+			border: none;
+			margin-left: 20px;
+			color: $colorDark;
+			width: 100%;
+		}
+	}
+	.align-right {
+		height: $headerHeight;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		
+		.btn-custom {
+			background: none;
+			outline: none;
+			border: none;
+		}
+		.dropdown-menu {
+			left: auto;
+			right: 0;
+			top: 37px;
+			@include border-radius(0);
+		}
+	}
+}

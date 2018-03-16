@@ -1,0 +1,76 @@
+/* Siebar */
+.sidebar {
+	width: $sidebarWidth;
+	min-height: 100vh;
+	top: 0;
+	background: #fafafa;
+	position: fixed;
+	border-right: 1px solid $colorGray;
+	box-sizing: border-box;
+	z-index: 9;
+
+	.sidebar-header {
+		height: $headerHeight;
+		border-bottom: 2px solid $colorGray;
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+		padding-left: 15px;
+		padding-right: 15px;
+	
+		.sidebar-title {
+			margin-left: 15px;
+			color: $colorSidebar;
+		}
+	}
+	
+	.sidebar-menu-wrap {
+		padding-top: 10px;
+		.sidebar-menu {
+			list-style: none;
+			margin-left: 0;
+			padding-left: 0;
+			
+			li {
+				line-height: 30px;
+
+				&.header {
+					display: block;
+					padding: 2px 20px;
+					font-size: 12px;
+					font-weight: bold;
+				}
+			}
+			a {
+				display: block;
+				font-size: 12px;
+				color: $colorSidebar;
+				text-decoration: none;
+				padding: 5px 20px;
+
+				.caret {
+					margin-top: 12px;
+				}
+
+				&:hover, &.active {
+					color: $colorPrimary;
+					background: $colorSidebarHover;
+				}
+			}
+			.fa, .far, .fas {
+				margin-right: 10px;
+			}
+
+			/* Dropdown */
+			ul {
+				display: none;
+				list-style: none;
+				padding-left: 24px;
+
+				a:hover {
+					background: none;
+				}
+			}
+		}
+	}
+}

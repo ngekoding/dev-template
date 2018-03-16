@@ -1,0 +1,36 @@
+/* BASE - Base styles, variables, mixins, etc */
+/* Colors */
+/* Fonts */
+/* Element size */
+/* Mixins */
+/* line 1, ../scss/base/_normalize.scss */
+textarea:focus, input:focus {
+  outline: none;
+}
+
+/* line 4, ../scss/base/_normalize.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 6, ../scss/login.scss */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/login-background.jpg) no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* line 16, ../scss/login.scss */
+.login-wrap {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}

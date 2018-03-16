@@ -1,0 +1,83 @@
+/* Print setting */
+.print-setting-container {
+  background: #2A579A;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+}
+.print-setting-container .print-setting {
+  width: 21cm;
+  margin: 0 auto;
+  color: #fff;
+  height: 30px;
+}
+.print-setting-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.print-setting-menu li {
+  position: relative;
+  display: inline-block;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+.print-setting-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+.print-setting-menu li:hover {
+  background: #3E6CB5;
+}
+.print-setting-menu li.no-padding {
+  padding: 5px 0;
+}
+.print-setting-menu li.no-hover:hover {
+  background: none;
+}
+.print-setting-menu ul {
+  padding: 8px 0;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #3E6CB5;
+  white-space: nowrap;
+  display: none;  
+}
+.print-setting-menu ul li {
+  display: block;
+  color: #efefef;
+}
+.print-setting-menu ul li a {
+  color: #efefef;
+}
+.print-setting-menu ul li:hover,
+.print-setting-menu ul li a:hover {
+  color: #ffffff;
+}
+.print-setting-menu li:hover > ul {
+  display: block;
+}
+.print-setting-menu .fa {
+  margin-right: 5px;
+}
+.print-setting-menu li select {
+  background: #ffffff;
+  border: none;
+  color: #333333;
+}
+.print-setting-menu li select:focus {
+  outline: none;
+}
+
+@media print {
+  .print-setting-container {
+    display: none !important;
+  }
+}
