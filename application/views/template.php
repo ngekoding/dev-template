@@ -25,7 +25,8 @@
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <!-- Datatables -->
     <link href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css" rel="stylesheet">
-
+    <!-- Summernote -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="<?php echo base_url() ?>assets/css/main.css" rel="stylesheet">
     
@@ -110,6 +111,8 @@
         <!-- Datatables -->
         <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+        <!-- Summernote -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
         <!-- Custom JS -->
         <script type="text/javascript" src="<?php echo base_url() ?>assets/js/main.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

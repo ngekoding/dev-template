@@ -1,7 +1,7 @@
 <div class="content">
 	<h3>Dashboard</h3>
 	<br>
-	
+	<!-- AdminLTE style -->
 	<div class="row">
 		<div class="col-lg-3 col-xs-6">
 			<div class="box-wrap bg-aqua">

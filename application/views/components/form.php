@@ -43,7 +43,10 @@
 				</div>
 			</form>
 			<div class="col-md-8">
-				<!-- Another content here -->
+				<div class="form-group">
+					<label for="">WYSIWYG ~ What You See Is What You Get</label>
+					<textarea name="content" class="summernote"></textarea>
+				</div>
 			</div>
 		</div>
 	</div>
