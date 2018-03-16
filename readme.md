@@ -1,10 +1,6 @@
-###################
-DevTemplate
-###################
-
-Admin Template integrated with CodeIgniter
+Admin Template in CodeIgniter
 ------------------------------------------
 
 Build with Bootstrap, SASS & Love.
 
-Keep in Touch www.ngekoding.com
+www.ngekoding.com
